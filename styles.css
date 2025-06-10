@@ -1,37 +1,63 @@
+/* General */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #000;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
+    color: #000;
 }
 
-/* Social Links using Font Awesome */
+/* Navbar */
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+/* Social Links */
+
 .social-links {
     list-style: none;
-    padding: 0px;
+    padding: 0;
     margin: 20px auto;
 }
 
 .social-links li {
-    display: inline;
+    display: inline-block;
     margin: 10px;
 }
 
-.social-links i {
-    color: #333;
+.social-links a {
+    color: #000;
+    font-size: 24px;
     transition: color 0.3s ease;
-    font-size: 24px; /* 你可以调整图标大小 */
 }
 
-.social-links i:hover {
-    color: #0077b5; /* LinkedIn 蓝色，GitHub 黑色，Email 默认可以改 */
+.social-links a:hover {
+    color: #007bff; /* Bootstrap blue */
 }
 
 /* Publications */
+
 #publications li {
     list-style: none;
 }
@@ -44,12 +70,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#publications .author-me {
+#publications author-me {
     text-decoration: underline dotted;
 }
 
 #publications .links li {
-    padding: .1em 0px;
+    padding: 0.1em 0;
 }
 
 .absBox, .bibBox {
@@ -85,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Presentations */
+
 #presentations li {
     list-style: none;
 }
@@ -97,7 +124,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-/* Accordion customization */
+/* Accordion */
+
 .accordion-button {
     color: #000;
     background-color: #fff;
@@ -109,8 +137,15 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 0;
 }
 
-.accordion-button:focus {
-    border-color: #FFF;
+.accordion-button:focus, .accordion-button:not(.focus) {
+    border-color: #fff;
     outline: 0;
-    box-shadow: 0 0 0 0 #FFF;
+    box-shadow: 0 0 0 0 #fff;
+}
+
+/* Image styles */
+
+img.img-responsive {
+    border-radius: 50%; /* Circle face image */
+    object-fit: cover;
 }

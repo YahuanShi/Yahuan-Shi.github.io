@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Yahuan Shi | Computational Engineering Science</title>
+  <title>Yahuan Shi</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto&display=swap' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto&display=swap' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img/icons/YS.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9MRZ641Z4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,46 +20,119 @@
     gtag('config', 'G-T9MRZ641Z4');
   </script>
 </head>
-<body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script_links.js"></script>
+    <script src="resources/publications.js"></script>
+    <script src="populate_publications.js"></script>
+    <script src="populate_presentations.js"></script>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Yahuan Shi</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-            <span class="navbar-toggler-icon"></span>
+        <!-- BRAND -->
+        <a class="navbar-brand" href="#">Yahuan Shi</a>
+        <!-- TOGGLE -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="projects.html">Projects</a>
-                <a class="nav-item nav-link" href="cv.html">CV</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-            </div>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <!-- <a class="nav-item nav-link" href="#panel_publications">Publications</a>
+          <a class="nav-item nav-link" href="#panel_presentations">Presentations</a>
+          <a class="nav-item nav-link" href="cv.html">CV</a> -->
+        </div>
         </div>
     </div>
 </nav>
+  
+  <!-- MAIN -->
+  <div class="container">
+      
+      <!-- ABOUT ME -->
+        <div class="row">
 
-<!-- MAIN CONTENT -->
-<div class="container mt-5 text-center">
-    <h1>Welcome to Yahuan Shi's Homepage!</h1>
-    <p class="lead">M.Sc. Student in Computational Engineering Science<br>Technische Universität Berlin</p>
+            <!-- Left column -->
+            <div class="col-md-4 text-center">
+                <img class="img-responsive" src="img/face/face.png" alt="" style="height: 18vh;"><br>
 
-    <p>I completed my Bachelor's degree in Mechanical Design, Manufacturing, and Automation at Beijing Information Science and Technology University. Currently, I am pursuing a Master's degree in Computational Engineering Science at Technische Universität Berlin. I also participated in the Erasmus+ program as an exchange student at Politecnico di Milano.</p>
+                <ul class="social-links">
+                  <!-- GitHub -->
+                  <li><a href="https://github.com/yahuan-shi" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                  <!-- LinkedIn -->
+                  <li><a href="http://linkedin.com/in/yahuan-shi-305589132" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                  <!-- Email -->
+                  <li><a href="mailto:yahuan.shi@gmail.com"><i class="fas fa-envelope fa-lg"></i></a></li>
+                </ul>
+            </div>
 
-    <!-- Social links -->
-    <ul class="social-links">
-        <li><a href="https://github.com/yahuan-shi" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="mailto:yahuan.shi@gmail.com"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="http://linkedin.com/in/yahuan-shi-305589132" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-</div>
+            <!-- Right column -->
+            <div class="col-md-8" id="about-me">
+                <h1>About me</h1>
+                
+                <div style="margin-top:3%;">
+                    <p>
+                        I am currently pursuing a Master's degree in <strong>Computational Engineering Science</strong> at <a href="https://www.tu.berlin/en/" target="_blank">Technische Universität Berlin</a>.
+                    </p>
+                    <p>
+                        I completed my Bachelor's degree in <strong>Mechanical Design, Manufacturing and Automation</strong> at <a href="https://www.bistu.edu.cn/" target="_blank">Beijing Information Science and Technology University</a>.
+                        During my studies, I also participated in the <strong>Erasmus+</strong> program as an exchange student at <a href="https://www.polimi.it/en" target="_blank">Politecnico di Milano</a>.
+                    </p>
+                    <p>
+                        My current interests include:
+                        <ul>
+                          <li>Computational Engineering and Simulation,</li>
+                          <li>Machine Learning for Engineering Applications,</li>
+                          <li>Automation and Control,</li>
+                          <li>Scientific Computing.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <!-- <hr> HORIZONTAL RULE -->
+            
 
-<!-- FOOTER -->
-<footer class="text-center mt-5 mb-3">
-    <p>© 2025 Yahuan Shi</p>
-</footer>
+        <div class="row">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="accordion accordion-flush" id="accordion">
+            <div class="accordion-item" id="panel_publications">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <h2>Publications</h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <ul id="publications">
+                        <!-- No publications yet -->
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" id="panel_presentations">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <h2>Presentations</h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <ul id="presentations">
+                        <!-- No presentations yet -->
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+        </div> <!-- ACCORDION -->
+        </div> <!-- ROW -->
+
+    </div> <!-- CONTAINER -->
+
 </body>
 </html>
