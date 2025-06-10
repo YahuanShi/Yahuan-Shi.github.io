@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Social Links using Font Awesome */
+.social-links {
+    list-style: none;
+    padding: 0px;
+    margin: 20px auto;
+}
+
+.social-links li {
+    display: inline;
+    margin: 10px;
+}
+
+.social-links i {
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 24px; /* 你可以调整图标大小 */
+}
+
+.social-links i:hover {
+    color: #0077b5; /* LinkedIn 蓝色，GitHub 黑色，Email 默认可以改 */
+}
+
+/* Publications */
+#publications li {
+    list-style: none;
+}
+
+#publications > li:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+
+#publications .title {
+    font-weight: bold;
+}
+
+#publications .author-me {
+    text-decoration: underline dotted;
+}
+
+#publications .links li {
+    padding: .1em 0px;
+}
+
+.absBox, .bibBox {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.absBox {
+    text-align: justify;
+}
+
+.absBox p {
+    margin-bottom: 0;
+}
+
+.bibBox {
+    position: relative;
+}
+
+.bibBox pre {
+    white-space: pre-wrap;
+    margin-bottom: 0;
+}
+
+.copyButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Presentations */
+#presentations li {
+    list-style: none;
+}
+
+#presentations li:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+
+#presentations .title {
+    font-weight: bold;
+}
+
+/* Accordion customization */
+.accordion-button {
+    color: #000;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    border-width: 0;
+}
+
+.accordion-button:focus {
+    border-color: #FFF;
+    outline: 0;
+    box-shadow: 0 0 0 0 #FFF;
+}
